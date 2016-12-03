@@ -59,7 +59,7 @@ int GetErr(void) {
 	for (i=0; i<11; i++) {	
 		if (sensor & 0x0001) {
 			/* if the light is too far from last m ,do not count*/
-			if (((gl_iSensorDistance[i] - gl_iNowErr) < gl_maxServoAngle) && ((gl_iSensorDistance[i] - gl_iNowErr) > -gl_maxServoAngle)) {
+			if (((gl_iSensorDistance[i] - gl_iNowErr) < 30) && ((gl_iSensorDistance[i] - gl_iNowErr) > -30)) {
 
                 if(!lastPositionFlag) {
                     s_lastPositionErr = gl_iSensorDistance[i];
