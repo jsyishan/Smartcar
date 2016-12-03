@@ -1,0 +1,1 @@
+-c --cpu Cortex-M0 -g -O0 --apcs=interwork -I.\source\Hearders -I.\startup -I "D:\Keil\ARM\INC" -I "D:\Keil\ARM\INC\NXP\LPC11xx" -o ".\list\digital_sensor.o" --omf_browse ".\list\digital_sensor.crf" --depend ".\list\digital_sensor.d" "source\Driver\digital_sensor.c"

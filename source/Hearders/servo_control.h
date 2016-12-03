@@ -14,5 +14,6 @@
 #include "include.h"
 int8_t get_servo_angle(void);
 int GetErr(void);
+/* Coded by Jiang */
+int GetExpectedServoAngle(int num_lights, int sum_angle);
 #endif
-

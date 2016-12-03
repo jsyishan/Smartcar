@@ -3,12 +3,11 @@
 <pre>
 <h1>�Vision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\Prinz Eugen\Desktop\�����������\Cotex-M0���\У�����ܳ�����_����\SmartCar_ARM_Encoder_Ver1.2_Keil4\SmartCar9th_ARM_Encoder.uvproj
-Project File Date:  11/14/2015
+C:\Users\Prinz Eugen\Desktop\github\Smartcar\SmartCar9th_ARM_Encoder.uvproj
+Project File Date:  12/01/2016
 
 <h2>Output:</h2>
 Build target 'SmartCar_ARM_Encoder'
-assembling startup_LPC11xx.s...
 compiling Arithmetic.c...
 compiling IRQHandler.c...
 compiling motor_control.c...
@@ -27,6 +26,307 @@ compiling test.c...
 compiling uart.c...
 compiling SmartCar6th.c...
 linking...
-Program Size: Code=8458 RO-data=474 RW-data=156 ZI-data=676  
+Program Size: Code=5870 RO-data=406 RW-data=160 ZI-data=688  
 FromELF: creating hex file...
 ".\list\SmartCar9th_ARM_Encoder.axf" - 0 Error(s), 0 Warning(s).
+Build target 'SmartCar_ARM_Encoder'
+compiling Arithmetic.c...
+compiling IRQHandler.c...
+compiling motor_control.c...
+compiling protect.c...
+compiling servo_control.c...
+source\Control\servo_control.c(28): error:  #20: identifier "s_iLastErr" is undefined
+source\Control\servo_control.c:           return s_iLastErr;
+source\Control\servo_control.c:                  ^
+source\Control\servo_control.c(31): error:  #20: identifier "avg_angle" is undefined
+source\Control\servo_control.c:           avg_angle = sum_angle / num_lights;
+source\Control\servo_control.c:           ^
+source\Control\servo_control.c(32): warning:  #223-D: function "abs" declared implicitly
+source\Control\servo_control.c:           if(abs(s_lastPositionErr - avg_angle) < 10) {
+source\Control\servo_control.c:              ^
+source\Control\servo_control.c(32): error:  #20: identifier "s_lastPositionErr" is undefined
+source\Control\servo_control.c:           if(abs(s_lastPositionErr - avg_angle) < 10) {
+source\Control\servo_control.c:                  ^
+source\Control\servo_control.c(50): error:  #268: declaration may not appear after executable statement in block
+source\Control\servo_control.c:       int lastPositionFlag = 0; // 是否已记录上次打�?      ^
+source\Control\servo_control.c(51): error:  #268: declaration may not appear after executable statement in block
+source\Control\servo_control.c:       static int s_lastPositionErr = 0; //上一次舵机打�?      ^
+source\Control\servo_control.c(42): warning:  #177-D: variable "s_iLastErr" was declared but never referenced
+source\Control\servo_control.c:       static int s_iLastErr = 0;
+source\Control\servo_control.c:                  ^
+source\Control\servo_control.c(51): warning:  #550-D: variable "s_lastPositionErr" was set but never used
+source\Control\servo_control.c:       static int s_lastPositionErr = 0; //上一次舵机打�?                 ^
+source\Control\servo_control.c: source\Control\servo_control.c: 3 warnings, 5 errors
+compiling common.c...
+compiling digital_sensor.c...
+compiling Init_Encoder.c...
+compiling Init_GPIO.c...
+compiling Init_motor.c...
+compiling Init_servo.c...
+compiling motor.c...
+compiling servo.c...
+compiling SystemInit.c...
+compiling test.c...
+compiling uart.c...
+compiling SmartCar6th.c...
+Target not created
+Build target 'SmartCar_ARM_Encoder'
+compiling servo_control.c...
+source\Control\servo_control.c(28): error:  #20: identifier "s_iLastErr" is undefined
+source\Control\servo_control.c:           return s_iLastErr;
+source\Control\servo_control.c:                  ^
+source\Control\servo_control.c(32): error:  #20: identifier "avg_angle" is undefined
+source\Control\servo_control.c:           avg_angle = sum_angle / num_lights;
+source\Control\servo_control.c:           ^
+source\Control\servo_control.c(34): warning:  #223-D: function "abs" declared implicitly
+source\Control\servo_control.c:           if(abs(s_lastPositionErr - avg_angle) < 10) {
+source\Control\servo_control.c:              ^
+source\Control\servo_control.c(34): error:  #20: identifier "s_lastPositionErr" is undefined
+source\Control\servo_control.c:           if(abs(s_lastPositionErr - avg_angle) < 10) {
+source\Control\servo_control.c:                  ^
+source\Control\servo_control.c(53): error:  #268: declaration may not appear after executable statement in block
+source\Control\servo_control.c:       int lastPositionFlag = 0; // 是否已记录上次打�?      ^
+source\Control\servo_control.c(54): error:  #268: declaration may not appear after executable statement in block
+source\Control\servo_control.c:       static int s_lastPositionErr = 0; //上一次舵机打�?      ^
+source\Control\servo_control.c(45): warning:  #177-D: variable "s_iLastErr" was declared but never referenced
+source\Control\servo_control.c:       static int s_iLastErr = 0;
+source\Control\servo_control.c:                  ^
+source\Control\servo_control.c(54): warning:  #550-D: variable "s_lastPositionErr" was set but never used
+source\Control\servo_control.c:       static int s_lastPositionErr = 0; //上一次舵机打�?                 ^
+source\Control\servo_control.c: source\Control\servo_control.c: 3 warnings, 5 errors
+compiling digital_sensor.c...
+source\Driver\digital_sensor.c(65): warning:  #1-D: last line of file ends without a newline
+source\Driver\digital_sensor.c:   11000000000
+source\Driver\digital_sensor.c:              ^
+source\Driver\digital_sensor.c(65): error:  #169: expected a declaration
+source\Driver\digital_sensor.c:   11000000000
+source\Driver\digital_sensor.c:   ^
+source\Driver\digital_sensor.c: source\Driver\digital_sensor.c: 1 warning, 1 error
+Target not created
+Build target 'SmartCar_ARM_Encoder'
+compiling servo_control.c...
+source\Control\servo_control.c(28): error:  #20: identifier "s_iLastErr" is undefined
+source\Control\servo_control.c:           return s_iLastErr;
+source\Control\servo_control.c:                  ^
+source\Control\servo_control.c(32): error:  #20: identifier "avg_angle" is undefined
+source\Control\servo_control.c:           avg_angle = sum_angle / num_lights;
+source\Control\servo_control.c:           ^
+source\Control\servo_control.c(34): error:  #20: identifier "s_lastPositionErr" is undefined
+source\Control\servo_control.c:           if(s_lastPositionErr - avg_angle < 10) {
+source\Control\servo_control.c:              ^
+source\Control\servo_control.c(53): error:  #268: declaration may not appear after executable statement in block
+source\Control\servo_control.c:       int lastPositionFlag = 0; // 是否已记录上次打�?      ^
+source\Control\servo_control.c(54): error:  #268: declaration may not appear after executable statement in block
+source\Control\servo_control.c:       static int s_lastPositionErr = 0; //上一次舵机打�?      ^
+source\Control\servo_control.c(45): warning:  #177-D: variable "s_iLastErr" was declared but never referenced
+source\Control\servo_control.c:       static int s_iLastErr = 0;
+source\Control\servo_control.c:                  ^
+source\Control\servo_control.c(54): warning:  #550-D: variable "s_lastPositionErr" was set but never used
+source\Control\servo_control.c:       static int s_lastPositionErr = 0; //上一次舵机打�?                 ^
+source\Control\servo_control.c: source\Control\servo_control.c: 2 warnings, 5 errors
+compiling digital_sensor.c...
+source\Driver\digital_sensor.c(65): warning:  #1-D: last line of file ends without a newline
+source\Driver\digital_sensor.c:   11000000000
+source\Driver\digital_sensor.c:              ^
+source\Driver\digital_sensor.c(65): error:  #169: expected a declaration
+source\Driver\digital_sensor.c:   11000000000
+source\Driver\digital_sensor.c:   ^
+source\Driver\digital_sensor.c: source\Driver\digital_sensor.c: 1 warning, 1 error
+Target not created
+Build target 'SmartCar_ARM_Encoder'
+compiling servo_control.c...
+source\Control\servo_control.c(36): error:  #20: identifier "avg_angle" is undefined
+source\Control\servo_control.c:           avg_angle = sum_angle / num_lights;
+source\Control\servo_control.c:           ^
+source\Control\servo_control.c(57): error:  #268: declaration may not appear after executable statement in block
+source\Control\servo_control.c:       int lastPositionFlag = 0; // 是否已记录上次打�?      ^
+source\Control\servo_control.c: source\Control\servo_control.c: 0 warnings, 2 errors
+compiling digital_sensor.c...
+source\Driver\digital_sensor.c(65): warning:  #1-D: last line of file ends without a newline
+source\Driver\digital_sensor.c:   11000000000
+source\Driver\digital_sensor.c:              ^
+source\Driver\digital_sensor.c(65): error:  #169: expected a declaration
+source\Driver\digital_sensor.c:   11000000000
+source\Driver\digital_sensor.c:   ^
+source\Driver\digital_sensor.c: source\Driver\digital_sensor.c: 1 warning, 1 error
+Target not created
+Build target 'SmartCar_ARM_Encoder'
+compiling servo_control.c...
+source\Control\servo_control.c(36): error:  #20: identifier "avg_angle" is undefined
+source\Control\servo_control.c:           avg_angle = sum_angle / num_lights;
+source\Control\servo_control.c:           ^
+source\Control\servo_control.c(38): warning:  #223-D: function "abs" declared implicitly
+source\Control\servo_control.c:           if(abs(s_lastPositionErr - avg_angle) < 10) {
+source\Control\servo_control.c:              ^
+source\Control\servo_control.c(57): error:  #268: declaration may not appear after executable statement in block
+source\Control\servo_control.c:       int lastPositionFlag = 0; // 是否已记录上次打�?      ^
+source\Control\servo_control.c: source\Control\servo_control.c: 1 warning, 2 errors
+compiling digital_sensor.c...
+source\Driver\digital_sensor.c(65): warning:  #1-D: last line of file ends without a newline
+source\Driver\digital_sensor.c:   11000000000
+source\Driver\digital_sensor.c:              ^
+source\Driver\digital_sensor.c(65): error:  #169: expected a declaration
+source\Driver\digital_sensor.c:   11000000000
+source\Driver\digital_sensor.c:   ^
+source\Driver\digital_sensor.c: source\Driver\digital_sensor.c: 1 warning, 1 error
+Target not created
+Build target 'SmartCar_ARM_Encoder'
+compiling servo_control.c...
+source\Control\servo_control.c(35): error:  #20: identifier "avg_angle" is undefined
+source\Control\servo_control.c:           avg_angle = sum_angle / num_lights;
+source\Control\servo_control.c:           ^
+source\Control\servo_control.c(56): error:  #268: declaration may not appear after executable statement in block
+source\Control\servo_control.c:       int lastPositionFlag = 0; // 是否已记录上次打�?      ^
+source\Control\servo_control.c: source\Control\servo_control.c: 0 warnings, 2 errors
+compiling digital_sensor.c...
+source\Driver\digital_sensor.c(65): warning:  #1-D: last line of file ends without a newline
+source\Driver\digital_sensor.c:   11000000000
+source\Driver\digital_sensor.c:              ^
+source\Driver\digital_sensor.c(65): error:  #169: expected a declaration
+source\Driver\digital_sensor.c:   11000000000
+source\Driver\digital_sensor.c:   ^
+source\Driver\digital_sensor.c: source\Driver\digital_sensor.c: 1 warning, 1 error
+Target not created
+Build target 'SmartCar_ARM_Encoder'
+compiling servo_control.c...
+source\Control\servo_control.c(35): error:  #20: identifier "avg_angle" is undefined
+source\Control\servo_control.c:           avg_angle = sum_angle / num_lights;
+source\Control\servo_control.c:           ^
+source\Control\servo_control.c(56): error:  #268: declaration may not appear after executable statement in block
+source\Control\servo_control.c:       int lastPositionFlag = 0;
+source\Control\servo_control.c:       ^
+source\Control\servo_control.c: source\Control\servo_control.c: 0 warnings, 2 errors
+compiling digital_sensor.c...
+source\Driver\digital_sensor.c(65): warning:  #1-D: last line of file ends without a newline
+source\Driver\digital_sensor.c:   11000000000
+source\Driver\digital_sensor.c:              ^
+source\Driver\digital_sensor.c(65): error:  #169: expected a declaration
+source\Driver\digital_sensor.c:   11000000000
+source\Driver\digital_sensor.c:   ^
+source\Driver\digital_sensor.c: source\Driver\digital_sensor.c: 1 warning, 1 error
+Target not created
+Build target 'SmartCar_ARM_Encoder'
+compiling servo_control.c...
+source\Control\servo_control.c(56): error:  #268: declaration may not appear after executable statement in block
+source\Control\servo_control.c:       int lastPositionFlag = 0; // 是否已记录上次打�?      ^
+source\Control\servo_control.c: source\Control\servo_control.c: 0 warnings, 1 error
+compiling digital_sensor.c...
+source\Driver\digital_sensor.c(65): warning:  #1-D: last line of file ends without a newline
+source\Driver\digital_sensor.c:   11000000000
+source\Driver\digital_sensor.c:              ^
+source\Driver\digital_sensor.c(65): error:  #169: expected a declaration
+source\Driver\digital_sensor.c:   11000000000
+source\Driver\digital_sensor.c:   ^
+source\Driver\digital_sensor.c: source\Driver\digital_sensor.c: 1 warning, 1 error
+Target not created
+Build target 'SmartCar_ARM_Encoder'
+compiling servo_control.c...
+source\Control\servo_control.c(56): error:  #268: declaration may not appear after executable statement in block
+source\Control\servo_control.c:       int lastPositionFlag = 0; // 是否已记录上次打�?      ^
+source\Control\servo_control.c: source\Control\servo_control.c: 0 warnings, 1 error
+compiling digital_sensor.c...
+source\Driver\digital_sensor.c(64): warning:  #1-D: last line of file ends without a newline
+source\Driver\digital_sensor.c:   }
+source\Driver\digital_sensor.c:    ^
+source\Driver\digital_sensor.c: source\Driver\digital_sensor.c: 1 warning, 0 errors
+Target not created
+Build target 'SmartCar_ARM_Encoder'
+compiling servo_control.c...
+compiling digital_sensor.c...
+linking...
+Program Size: Code=5922 RO-data=406 RW-data=164 ZI-data=692  
+FromELF: creating hex file...
+".\list\SmartCar9th_ARM_Encoder.axf" - 0 Error(s), 0 Warning(s).
+Build target 'SmartCar_ARM_Encoder'
+compiling Arithmetic.c...
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h: source\Control\Arithmetic.c: 1 warning, 0 errors
+compiling IRQHandler.c...
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h: source\Control\IRQHandler.c: 1 warning, 0 errors
+compiling motor_control.c...
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h: source\Control\motor_control.c: 1 warning, 0 errors
+compiling protect.c...
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h: source\Control\protect.c: 1 warning, 0 errors
+compiling servo_control.c...
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h: source\Control\servo_control.c: 2 warnings, 0 errors
+compiling common.c...
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h: source\Driver\common.c: 1 warning, 0 errors
+compiling digital_sensor.c...
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h: source\Driver\digital_sensor.c: 1 warning, 0 errors
+compiling Init_Encoder.c...
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h: source\Driver\Init_Encoder.c: 1 warning, 0 errors
+compiling Init_GPIO.c...
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h: source\Driver\Init_GPIO.c: 1 warning, 0 errors
+compiling Init_motor.c...
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h: source\Driver\Init_motor.c: 1 warning, 0 errors
+compiling Init_servo.c...
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h: source\Driver\Init_servo.c: 1 warning, 0 errors
+compiling motor.c...
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h: source\Driver\motor.c: 1 warning, 0 errors
+compiling servo.c...
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h: source\Driver\servo.c: 1 warning, 0 errors
+compiling SystemInit.c...
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h: source\Driver\SystemInit.c: 1 warning, 0 errors
+compiling test.c...
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h: source\Driver\test.c: 1 warning, 0 errors
+compiling uart.c...
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h: source\Driver\uart.c: 1 warning, 0 errors
+compiling SmartCar6th.c...
+.\source\Hearders\servo_control.h(19): warning:  #1-D: last line of file ends without a newline
+.\source\Hearders\servo_control.h:   #endif
+.\source\Hearders\servo_control.h:         ^
+.\source\Hearders\servo_control.h: source\SmartCar6th.c: 1 warning, 0 errors
+linking...
+Program Size: Code=5934 RO-data=406 RW-data=164 ZI-data=692  
+FromELF: creating hex file...
+".\list\SmartCar9th_ARM_Encoder.axf" - 0 Error(s), 18 Warning(s).

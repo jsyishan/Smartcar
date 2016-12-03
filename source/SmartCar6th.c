@@ -29,7 +29,9 @@ int gl_iR600Speed = 0;
 int gl_iR450Speed = 0;
 int gl_iNowErr = 0;
 unsigned int gl_uiLastDigitalSensor = 0;
-int gl_iSensorDistance[11] = {30, 21, 15, 10, 4, 0, -4, -10, -15, -21, -30};
+int gl_iSensorDistance[11] = {42,24,15,10,4,0,-4,-10,-15,-24,-42};
+
+int gl_maxServoAngle = 30;
 
 static void SetSpeed(void);
 

@@ -62,6 +62,7 @@ extern int gl_iR450Speed;
 extern int gl_iNowErr;
 extern unsigned int gl_uiLastDigitalSensor;
 extern int gl_iSensorDistance[11];
+extern int gl_maxServoAngle;
 
 #endif     //  End of _INCLUDES_H_
 
