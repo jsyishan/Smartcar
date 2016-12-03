@@ -1,0 +1,190 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+ANGLE_SCALE	.\Hearders\servo.h	17;"	d
+BUFSIZE	.\Hearders\uart.h	46;"	d
+BUZZER_OFF	.\Drive\common.c	/^void BUZZER_OFF(void)$/;"	f
+BUZZER_ON	.\Drive\common.c	/^void BUZZER_ON(void)$/;"	f
+ClockSource	.\Drive\SystemInit.c	/^uint32_t ClockSource = IRC_OSC;$/;"	v
+Control	.\Control\Arithmetic.c	/^void Control(void)$/;"	f
+EMC0	.\Hearders\Init_motor.h	21;"	d
+EMC0	.\Hearders\Init_servo.h	10;"	d
+EMC1	.\Hearders\Init_motor.h	22;"	d
+EMC1	.\Hearders\Init_servo.h	11;"	d
+EMC2	.\Hearders\Init_motor.h	23;"	d
+EMC2	.\Hearders\Init_servo.h	12;"	d
+EMC3	.\Hearders\Init_motor.h	24;"	d
+EMC3	.\Hearders\Init_servo.h	13;"	d
+ENCODER_USE	.\Hearders\Init_Encoder.h	16;"	d
+GET_START_BAR	.\Drive\digital_sensor.c	/^uint8_t GET_START_BAR(void)$/;"	f
+GetDigitalSensorNum	.\Drive\digital_sensor.c	/^void GetDigitalSensorNum(uint32_t digital_sensor)$/;"	f
+GetDigitalSensorValue	.\Drive\digital_sensor.c	/^uint32_t GetDigitalSensorValue(void)$/;"	f
+GetErr	.\Control\servo_control.c	/^int GetErr(void)$/;"	f
+IER_RBR	.\Hearders\uart.h	27;"	d
+IER_RLS	.\Hearders\uart.h	29;"	d
+IER_THRE	.\Hearders\uart.h	28;"	d
+IIR_CTI	.\Hearders\uart.h	34;"	d
+IIR_PEND	.\Hearders\uart.h	31;"	d
+IIR_RDA	.\Hearders\uart.h	33;"	d
+IIR_RLS	.\Hearders\uart.h	32;"	d
+IIR_THRE	.\Hearders\uart.h	35;"	d
+IRC_OSC	.\Hearders\SystemInit.h	74;"	d
+IRQ_motor_PWMOut	.\Drive\motor.c	/^void IRQ_motor_PWMOut(void)$/;"	f
+Init_ALL	.\Drive\SystemInit.c	/^void Init_ALL(void)$/;"	f
+Init_Encoder	.\Drive\Init_Encoder.c	/^void Init_Encoder (void) $/;"	f
+Init_GPIO	.\Drive\Init_GPIO.c	/^void Init_GPIO( void )$/;"	f
+Init_UART	.\Drive\uart.c	/^void Init_UART(uint32_t baudrate)$/;"	f
+Init_motor	.\Drive\Init_motor.c	/^void Init_motor(void)$/;"	f
+Init_servo	.\Drive\Init_servo.c	/^void Init_servo(void)$/;"	f
+LF	.\Hearders\motor.h	19;"	d
+LR	.\Hearders\motor.h	21;"	d
+LSR_BI	.\Hearders\uart.h	41;"	d
+LSR_FE	.\Hearders\uart.h	40;"	d
+LSR_OE	.\Hearders\uart.h	38;"	d
+LSR_PE	.\Hearders\uart.h	39;"	d
+LSR_RDR	.\Hearders\uart.h	37;"	d
+LSR_RXFE	.\Hearders\uart.h	44;"	d
+LSR_TEMT	.\Hearders\uart.h	43;"	d
+LSR_THRE	.\Hearders\uart.h	42;"	d
+LeftTrace	.\Control\Arithmetic.c	/^void LeftTrace (void) $/;"	f
+MAIN_CLKSRCSEL_Val	.\Hearders\SystemInit.h	57;"	d
+MAIN_PLL_M_Val	.\Hearders\SystemInit.h	58;"	d
+MAIN_PLL_P_Val	.\Hearders\SystemInit.h	59;"	d
+MATCH0	.\Hearders\Init_motor.h	26;"	d
+MATCH0	.\Hearders\Init_servo.h	15;"	d
+MATCH1	.\Hearders\Init_motor.h	27;"	d
+MATCH1	.\Hearders\Init_servo.h	16;"	d
+MATCH2	.\Hearders\Init_motor.h	28;"	d
+MATCH2	.\Hearders\Init_servo.h	17;"	d
+MATCH3	.\Hearders\Init_motor.h	29;"	d
+MATCH3	.\Hearders\Init_servo.h	18;"	d
+MAX_ANGLE	.\Hearders\servo.h	18;"	d
+MODEM_TEST	.\Hearders\uart.h	25;"	d
+Main_PLL_Setup	.\Drive\SystemInit.c	/^void Main_PLL_Setup ( void )$/;"	f
+OSC_CLK	.\Hearders\SystemInit.h	73;"	d
+PWMOut	.\Control\motor_control.c	/^void PWMOut(int8_t pwmduty, int8_t angle)$/;"	f
+PWMOut4	.\Drive\motor.c	/^void PWMOut4(int8_t LR_pwm_value, int8_t LF_pwm_value, int8_t RR_pwm_value, int8_t RF_pwm_value)$/;"	f
+PWM_INSIDE_F	.\Hearders\motor_control.h	18;"	d
+PWM_INSIDE_R	.\Hearders\motor_control.h	17;"	d
+PWM_OUTSIDE_R	.\Hearders\motor_control.h	16;"	d
+PWMout_LF	.\Drive\motor.c	/^void PWMout_LF(int8_t LF_pwm_value)$/;"	f
+PWMout_LR	.\Drive\motor.c	/^void PWMout_LR(int8_t LR_pwm_value)$/;"	f
+PWMout_RF	.\Drive\motor.c	/^void PWMout_RF(int8_t RF_pwm_value)$/;"	f
+PWMout_RR	.\Drive\motor.c	/^void PWMout_RR(int8_t RR_pwm_value)$/;"	f
+RF	.\Hearders\motor.h	20;"	d
+RR	.\Hearders\motor.h	22;"	d
+RS485_AADEN	.\Hearders\uart.h	51;"	d
+RS485_DCTRL	.\Hearders\uart.h	53;"	d
+RS485_ENABLED	.\Hearders\uart.h	23;"	d
+RS485_NMMEN	.\Hearders\uart.h	49;"	d
+RS485_OINV	.\Hearders\uart.h	54;"	d
+RS485_RXDIS	.\Hearders\uart.h	50;"	d
+RS485_SEL	.\Hearders\uart.h	52;"	d
+ReadSwitch	.\Drive\common.c	/^uint8_t ReadSwitch(uint8_t switch_select)$/;"	f
+Remote	.\Drive\common.c	/^uint8_t Remote(void)$/;"	f
+RightTrace	.\Control\Arithmetic.c	/^void RightTrace (void) $/;"	f
+SERVO_CENTER	.\Hearders\servo.h	16;"	d
+SET_LF_MOTOR_BACKWARD	.\Hearders\motor.h	29;"	d
+SET_LF_MOTOR_FORWARD	.\Hearders\motor.h	30;"	d
+SET_LR_MOTOR_BACKWARD	.\Hearders\motor.h	35;"	d
+SET_LR_MOTOR_FORWARD	.\Hearders\motor.h	36;"	d
+SET_RF_MOTOR_BACKWARD	.\Hearders\motor.h	31;"	d
+SET_RF_MOTOR_FORWARD	.\Hearders\motor.h	32;"	d
+SET_RR_MOTOR_BACKWARD	.\Hearders\motor.h	33;"	d
+SET_RR_MOTOR_FORWARD	.\Hearders\motor.h	34;"	d
+SYS_AHB_DIV_Val	.\Hearders\SystemInit.h	60;"	d
+SYS_OSC	.\Hearders\SystemInit.h	76;"	d
+SetServoAngle	.\Drive\servo.c	/^void SetServoAngle(int8_t angle)$/;"	f
+SetSpeed	.\SmartCar6th.c	/^static void SetSpeed (void) $/;"	f	file:
+SpeedOut	.\Control\motor_control.c	/^void SpeedOut (int speed, int angle) $/;"	f
+SystemAHBFrequency	.\Drive\SystemInit.c	/^uint32_t SystemAHBFrequency = IRC_OSC;$/;"	v
+SystemFrequency	.\Drive\SystemInit.c	/^uint32_t SystemFrequency = IRC_OSC; \/*!< System Clock Frequency (Core Clock)  *\/$/;"	v
+SystemInit	.\Drive\SystemInit.c	/^void SystemInit(void)$/;"	f
+TABLE_DIMENSION	.\Control\motor_control.c	3;"	d	file:
+TIMER16_0_IRQHandler	.\Control\IRQHandler.c	/^void TIMER16_0_IRQHandler(void)   \/\/1ms interrupt$/;"	f
+TIMER_MATCH	.\Hearders\Init_motor.h	18;"	d
+TIME_INTERVAL	.\Hearders\Init_motor.h	34;"	d
+TX_INTERRUPT	.\Hearders\uart.h	24;"	d
+TeleControl	.\Control\protect.c	/^void TeleControl ( void )$/;"	f
+Test	.\Drive\test.c	/^void Test ( void )$/;"	f
+TestCircuitBoard	.\Drive\test.c	/^void TestCircuitBoard(void)$/;"	f
+TestEncoder	.\Drive\test.c	/^ void TestEncoder(void)$/;"	f
+TestMotor	.\Drive\test.c	/^void TestMotor(void)$/;"	f
+TestPeriphery	.\Drive\test.c	/^ void TestPeriphery(void)$/;"	f
+TestSensor	.\Drive\test.c	/^ void TestSensor(void)$/;"	f
+TestServo	.\Drive\test.c	/^void TestServo(void)$/;"	f
+TimerInterval	.\Drive\Init_motor.c	/^uint32_t TimerInterval = 12000 - 1;$/;"	v
+UARTBuffer	.\Drive\uart.c	/^volatile uint8_t  UARTBuffer[BUFSIZE];$/;"	v
+UARTCount	.\Drive\uart.c	/^volatile uint32_t UARTCount = 0;$/;"	v
+UARTSend	.\Drive\uart.c	/^void UARTSend(uint8_t *BufferPtr)$/;"	f
+UARTStatus	.\Drive\uart.c	/^volatile uint32_t UARTStatus;$/;"	v
+UARTTxEmpty	.\Drive\uart.c	/^volatile uint8_t  UARTTxEmpty = 1;$/;"	v
+UART_IRQHandler	.\Drive\uart.c	/^void UART_IRQHandler(void)$/;"	f
+UART_recive	.\Drive\uart.c	/^uint8_t UART_recive(void)$/;"	f
+WDT_OSC	.\Hearders\SystemInit.h	75;"	d
+WriteLEDOnDrive	.\Drive\common.c	/^void WriteLEDOnDrive(uint8_t LED_select)$/;"	f
+XTAL	.\Hearders\SystemInit.h	72;"	d
+_ARITHMETIC_H_	.\Hearders\Arithmetic.h	12;"	d
+_COMMON_H_	.\Hearders\common.h	12;"	d
+_DIGITAL_SENSOR_H_	.\Hearders\digital_sensor.h	12;"	d
+_INCLUDES_H_	.\Hearders\include.h	12;"	d
+_INIT_ENCODER_H_	.\Hearders\Init_Encoder.h	12;"	d
+_IRQHANDLER_H_	.\Hearders\IRQHandler.h	12;"	d
+_MOTORCONTROL_H_	.\Hearders\motor_control.h	12;"	d
+_MOTOR_H_	.\Hearders\motor.h	12;"	d
+_NIMEIDE_H_	.\Hearders\nimeide.h	2;"	d
+_PROTECT_H_	.\Hearders\protect.h	21;"	d
+_SERVO_CONTROL_H_	.\Hearders\servo_control.h	12;"	d
+_SERVO_H_	.\Hearders\servo.h	12;"	d
+_SYSTEMINIT_H_	.\Hearders\SystemInit.h	12;"	d
+_TEST_H_	.\Hearders\test.h	12;"	d
+__INIT_GPIO_H	.\Hearders\Init_GPIO.h	12;"	d
+__INIT_MOTOR_H	.\Hearders\Init_motor.h	12;"	d
+__INIT_SERVO_H	.\Hearders\Init_servo.h	2;"	d
+__UART_H	.\Hearders\uart.h	21;"	d
+check_pwm_limit	.\Drive\motor.c	/^int8_t check_pwm_limit(int8_t pwm_value)$/;"	f
+clk_out	.\Drive\SystemInit.c	/^void clk_out(void)$/;"	f
+delayMs	.\Drive\Init_motor.c	/^void delayMs(uint8_t timer_num, uint32_t delayInMs)$/;"	f
+disable_timer16	.\Drive\Init_motor.c	/^void disable_timer16(void)$/;"	f
+disable_timer32	.\Drive\Init_servo.c	/^void disable_timer32(void)$/;"	f
+enable_timer16	.\Drive\Init_motor.c	/^void enable_timer16(void)$/;"	f
+enable_timer32	.\Drive\Init_servo.c	/^void enable_timer32(void)$/;"	f
+gl_Motor_PWMBuff	.\Drive\motor.c	/^static uint8_t gl_Motor_PWMBuff[4] = {0};$/;"	v	file:
+gl_cMotorPWM	.\SmartCar6th.c	/^int8_t gl_cMotorPWM = 0;					           \/\/  输出电机的PWM占空比(0-100)$/;"	v
+gl_cServoAngle	.\SmartCar6th.c	/^int8_t gl_cServoAngle = 0;				           \/\/  输出舵机的角度变量(-50 - 50)$/;"	v
+gl_iCurSpeed	.\SmartCar6th.c	/^int gl_iCurSpeed = 0;$/;"	v
+gl_iNowErr	.\SmartCar6th.c	/^int gl_iNowErr = 0;$/;"	v
+gl_iPattern	.\SmartCar6th.c	/^int gl_iPattern = 0;$/;"	v
+gl_iProgramPeriod	.\SmartCar6th.c	/^int gl_iProgramPeriod = 0;$/;"	v
+gl_iR450Speed	.\SmartCar6th.c	/^int gl_iR450Speed = 0;$/;"	v
+gl_iR600Speed	.\SmartCar6th.c	/^int gl_iR600Speed = 0;$/;"	v
+gl_iSensorDistance	.\SmartCar6th.c	/^int gl_iSensorDistance[11] = {50, 38, 30, 20, 4, 0, -4, -20, -30, -38, -50};$/;"	v
+gl_iStraightSpeed	.\SmartCar6th.c	/^int gl_iStraightSpeed = 0;$/;"	v
+gl_servoPWM	.\Drive\servo.c	/^static uint16_t gl_servoPWM = SERVO_CENTER;$/;"	v	file:
+gl_speedDifference	.\Control\motor_control.c	/^const uint8_t gl_speedDifference[3][TABLE_DIMENSION]  = {						$/;"	v
+gl_ucSensorNumber	.\SmartCar6th.c	/^uint8_t gl_ucSensorNumber = 0;$/;"	v
+gl_ucSwitchValue	.\SmartCar6th.c	/^uint8_t gl_ucSwitchValue = 0;$/;"	v
+gl_uiDigitalSensor	.\SmartCar6th.c	/^uint32_t gl_uiDigitalSensor = 0;$/;"	v
+gl_uiLastDigitalSensor	.\SmartCar6th.c	/^unsigned int gl_uiLastDigitalSensor = 0;$/;"	v
+gl_ulTimerCnt	.\SmartCar6th.c	/^unsigned long gl_ulTimerCnt = 0;$/;"	v
+gl_ulTotalDistance	.\SmartCar6th.c	/^unsigned long gl_ulTotalDistance = 0;$/;"	v
+init_timer16	.\Drive\Init_motor.c	/^void init_timer16(void) $/;"	f
+init_timer32	.\Drive\Init_servo.c	/^void init_timer32(void) $/;"	f
+main	.\SmartCar6th.c	/^int main(void)$/;"	f
+myitoa	.\Drive\uart.c	/^void myitoa(int8_t num, uint8_t *str)$/;"	f
+program_counter	.\Control\IRQHandler.c	/^static uint32_t program_counter = 0;$/;"	v	file:
+reset_GPIO	.\Drive\Init_GPIO.c	/^void reset_GPIO(void)$/;"	f
+reset_timer16	.\Drive\Init_motor.c	/^void reset_timer16(uint8_t timer_num)$/;"	f
+servo_PWMOut	.\Drive\servo.c	/^void servo_PWMOut(void)$/;"	f
+servo_counter	.\Control\IRQHandler.c	/^static uint8_t servo_counter = 0;$/;"	v	file:
+set_GPIO_Dir	.\Drive\Init_GPIO.c	/^void set_GPIO_Dir(void)$/;"	f
+timer16_0_period	.\Hearders\Init_motor.h	39;"	d
+timer16_1_period	.\Hearders\Init_motor.h	40;"	d
+timer16_Frequency	.\Hearders\Init_motor.h	36;"	d
+timer32_0_period	.\Hearders\Init_servo.h	8;"	d
+timer32_Frequency	.\Hearders\Init_servo.h	6;"	d
+timer32_period	.\Hearders\Init_servo.h	7;"	d
+timer_period	.\Hearders\Init_motor.h	37;"	d
