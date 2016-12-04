@@ -44,10 +44,19 @@ int GetExpectedServoAngle(unsigned char num_lights, int sum_angle) {
     //TODO:
     if(s_lastPositionErr - avg_angle < 3 || avg_angle - s_lastPositionErr < 3) {
         return s_lastPositionErr;
+
     } else if(s_lastPositionErr - avg_angle < 4 || avg_angle - s_lastPositionErr < 4) {
         return avg_angle;
+
     } else if(s_lastPositionErr - avg_angle < 5 || avg_angle - s_lastPositionErr < 5) {
         return (2 * avg_angle - s_lastPositionErr); //返回当前舵机角
+
+    } else if(s_lastPositionErr - avg_angle < 6 || avg_angle - s_lastPositionErr < 6) {
+        return (2 * avg_angle - s_lastPositionErr + 3);
+
+    } else if(s_lastPositionErr - avg_angle < 7 || avg_angle - s_lastPositionErr < 7) {
+        return (2 * avg_angle - s_lastPositionErr + 5);
+
     } else {
         return (2 * avg_angle - s_lastPositionErr + 7); //比当前舵机角更大的补偿角
     }
@@ -67,13 +76,16 @@ int GetErr(void) {
  
 	for (i=0; i<11; i++) {	
 		if (sensor & 0x0001) {
-            if(!lastPositionFlag) {
-                s_lastPositionErr = gl_iSensorDistance[i];
-            }
-            lastPositionFlag++;
+            /* if the light is too far from last m ,do not count*/
+            if (((gl_iSensorDistance[i] - gl_iNowErr) < 40) && ((gl_iSensorDistance[i] - gl_iNowErr) > -40)) {
+                if(!lastPositionFlag) {
+                    s_lastPositionErr = gl_iSensorDistance[i];
+                }
+                lastPositionFlag++;
 
-			iPositionErr += gl_iSensorDistance[i];
-			lightCount++;
+    			iPositionErr += gl_iSensorDistance[i];
+    			lightCount++;
+            }
 		}
 		sensor >>= 1;
 	}

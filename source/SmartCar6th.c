@@ -29,7 +29,7 @@ int gl_iR600Speed = 0;
 int gl_iR450Speed = 0;
 int gl_iNowErr = 0;
 unsigned int gl_uiLastDigitalSensor = 0;
-int gl_iSensorDistance[11] = {50, 37, 28, 14, 6, 0, -6, -14, -28, -37, -50};
+int gl_iSensorDistance[11] = {50, 37, 28, 14, 5, 0, -5, -14, -28, -37, -50};
 
 
 static void SetSpeed(void);
