@@ -1,1 +1,0 @@
--c --cpu Cortex-M0 -g -O0 --apcs=interwork -I.\source\Hearders -I.\startup -I "D:\Keil\ARM\INC" -I "D:\Keil\ARM\INC\NXP\LPC11xx" -o ".\list\irqhandler.o" --omf_browse ".\list\irqhandler.crf" --depend ".\list\irqhandler.d" "source\Control\IRQHandler.c"

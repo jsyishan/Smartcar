@@ -1,1 +1,0 @@
--c --cpu Cortex-M0 -g -O0 --apcs=interwork -I.\source\Hearders -I.\startup -I "D:\Keil\ARM\INC" -I "D:\Keil\ARM\INC\NXP\LPC11xx" -o ".\list\uart.o" --omf_browse ".\list\uart.crf" --depend ".\list\uart.d" "source\Driver\uart.c"

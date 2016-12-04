@@ -1,4 +1,0 @@
---cpu Cortex-M0 ".\list\startup_lpc11xx.o" ".\list\arithmetic.o" ".\list\irqhandler.o" ".\list\motor_control.o" ".\list\protect.o" ".\list\servo_control.o" ".\list\common.o" ".\list\digital_sensor.o" ".\list\init_encoder.o" ".\list\init_gpio.o" ".\list\init_motor.o" ".\list\init_servo.o" ".\list\motor.o" ".\list\servo.o" ".\list\systeminit.o" ".\list\test.o" ".\list\uart.o" ".\list\smartcar6th.o" --strict --scatter ".\list\SmartCar9th_ARM_Encoder.sct" 
---autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
---info sizes --info totals --info unused --info veneers 
- --list ".\list\SmartCar9th_ARM_Encoder.map" -o ".\list\SmartCar9th_ARM_Encoder.axf"
