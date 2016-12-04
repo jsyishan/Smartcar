@@ -29,7 +29,7 @@ int gl_iR600Speed = 0;
 int gl_iR450Speed = 0;
 int gl_iNowErr = 0;
 unsigned int gl_uiLastDigitalSensor = 0;
-int gl_iSensorDistance[11] = {42,24,15,10,4,0,-4,-10,-15,-24,-42};
+int gl_iSensorDistance[11] = {50, 37, 28, 14, 6, 0, -6, -14, -28, -37, -50};
 
 
 static void SetSpeed(void);
@@ -140,6 +140,8 @@ int main(void)
     }
 }
 
+
+
 /************************************************************************
  * Function         SetSpeed                                              
  * Usage            Set Speed                           
@@ -153,21 +155,21 @@ static void SetSpeed (void)
 {
     switch((gl_ucSwitchValue & 0x03))
     {
-        case 0: gl_iStraightSpeed = 70;//3&4
-                gl_iR600Speed = 65;
-                gl_iR450Speed = 55;
+        case 0: gl_iStraightSpeed = 80;//3&4
+                gl_iR600Speed = 60;
+                gl_iR450Speed = 50;
                 break;
-        case 1: gl_iStraightSpeed = 50;//300;//3
-                gl_iR600Speed = 45;
-                gl_iR450Speed = 35;
+        case 1: gl_iStraightSpeed = 60;//300;//3
+                gl_iR600Speed = 40;
+                gl_iR450Speed = 30;
                 break;
-        case 2: gl_iStraightSpeed = 60;//350;//4
-                gl_iR600Speed = 55;
-                gl_iR450Speed = 45;
+        case 2: gl_iStraightSpeed = 70;//350;//4
+                gl_iR600Speed = 50;
+                gl_iR450Speed = 40;
                 break;
-        case 3: gl_iStraightSpeed = 40;//400;//1||2||NULL
-                gl_iR600Speed = 35;
-                gl_iR450Speed = 25;
+        case 3: gl_iStraightSpeed = 50;//400;//1||2||NULL
+                gl_iR600Speed = 30;
+                gl_iR450Speed = 20;
                 break;
         default : 
                 break;
@@ -177,4 +179,3 @@ static void SetSpeed (void)
 
 
 
- 

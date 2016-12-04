@@ -27,7 +27,7 @@
 ### ADS-LD Output File: '.\list\SmartCar9th_ARM_Encoder.axf'
 ### ADS-LD Command File: '.\list\SmartCar9th_ARM_Encoder.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\list\SmartCar9th_ARM_Encoder.lnp', Handle=0x000009F8
+### Creating CmdFile '.\list\SmartCar9th_ARM_Encoder.lnp', Handle=0x000007F4
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\list\SmartCar9th_ARM_Encoder.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

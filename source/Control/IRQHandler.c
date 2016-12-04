@@ -27,10 +27,10 @@ void TIMER16_0_IRQHandler(void)   //1ms interrupt
         {
             program_counter = 0;
         }
-			
+
         IRQ_motor_PWMOut();       // output the motor PWM per 1ms
 			
-        if(servo_counter >= 10)   // output the servo PWM per 10ms
+        if(servo_counter >= 5)   // output the servo PWM per 8ms
         {
             servo_counter = 0;
             servo_PWMOut();

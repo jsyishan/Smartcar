@@ -22,8 +22,6 @@ Section Cross References
     arithmetic.o(.text) refers to servo.o(.text) for SetServoAngle
     arithmetic.o(.text) refers to motor.o(.text) for PWMOut4
     arithmetic.o(.text) refers to smartcar6th.o(.data) for gl_iNowErr
-    arithmetic.o(.text) refers to arithmetic.o(.data) for counter
-    arithmetic.o(.text) refers to arithmetic.o(.bss) for angleRecord
     irqhandler.o(.text) refers to motor.o(.text) for IRQ_motor_PWMOut
     irqhandler.o(.text) refers to servo.o(.text) for servo_PWMOut
     irqhandler.o(.text) refers to smartcar6th.o(.data) for gl_ulTimerCnt
@@ -183,59 +181,59 @@ Image Symbol Table
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
     RESET                                    0x00000000   Section      192  startup_lpc11xx.o(RESET)
+    ../../angel/boardlib.s                   0x00000000   Number         0  boardinit3.o ABSOLUTE
     ../../angel/boardlib.s                   0x00000000   Number         0  boardinit2.o ABSOLUTE
     ../../angel/boardlib.s                   0x00000000   Number         0  boardinit1.o ABSOLUTE
-    ../../angel/boardlib.s                   0x00000000   Number         0  boardinit3.o ABSOLUTE
     ../../angel/boardlib.s                   0x00000000   Number         0  boardshut.o ABSOLUTE
-    ../../angel/handlers.s                   0x00000000   Number         0  __scatter_copy.o ABSOLUTE
     ../../angel/handlers.s                   0x00000000   Number         0  __scatter_zi.o ABSOLUTE
-    ../../angel/kernel.s                     0x00000000   Number         0  rtexit2.o ABSOLUTE
+    ../../angel/handlers.s                   0x00000000   Number         0  __scatter_copy.o ABSOLUTE
+    ../../angel/kernel.s                     0x00000000   Number         0  rtentry.o ABSOLUTE
     ../../angel/kernel.s                     0x00000000   Number         0  rtentry2.o ABSOLUTE
+    ../../angel/kernel.s                     0x00000000   Number         0  rtexit2.o ABSOLUTE
     ../../angel/kernel.s                     0x00000000   Number         0  rtentry4.o ABSOLUTE
     ../../angel/kernel.s                     0x00000000   Number         0  rtexit.o ABSOLUTE
-    ../../angel/kernel.s                     0x00000000   Number         0  rtentry.o ABSOLUTE
+    ../../angel/rt.s                         0x00000000   Number         0  aeabi_idiv0.o ABSOLUTE
+    ../../angel/rt.s                         0x00000000   Number         0  aeabi_idiv0_sigfpe.o ABSOLUTE
     ../../angel/rt.s                         0x00000000   Number         0  rt_raise.o ABSOLUTE
     ../../angel/rt.s                         0x00000000   Number         0  rt_div0.o ABSOLUTE
-    ../../angel/rt.s                         0x00000000   Number         0  aeabi_idiv0_sigfpe.o ABSOLUTE
-    ../../angel/rt.s                         0x00000000   Number         0  aeabi_idiv0.o ABSOLUTE
     ../../angel/scatterp.s                   0x00000000   Number         0  __scatter.o ABSOLUTE
     ../../angel/startup.s                    0x00000000   Number         0  __main.o ABSOLUTE
-    ../../angel/sys.s                        0x00000000   Number         0  tempstk.o ABSOLUTE
     ../../angel/sys.s                        0x00000000   Number         0  sys_stackheap_outer.o ABSOLUTE
-    ../../angel/sys.s                        0x00000000   Number         0  libspace.o ABSOLUTE
+    ../../angel/sys.s                        0x00000000   Number         0  tempstk.o ABSOLUTE
     ../../angel/sys.s                        0x00000000   Number         0  use_no_semi.o ABSOLUTE
-    ../../angel/sysapp.c                     0x00000000   Number         0  sys_exit.o ABSOLUTE
-    ../../angel/sysapp.c                     0x00000000   Number         0  sys_command.o ABSOLUTE
+    ../../angel/sys.s                        0x00000000   Number         0  libspace.o ABSOLUTE
     ../../angel/sysapp.c                     0x00000000   Number         0  sys_wrch.o ABSOLUTE
-    ../../armsys.c                           0x00000000   Number         0  no_argv.o ABSOLUTE
+    ../../angel/sysapp.c                     0x00000000   Number         0  sys_command.o ABSOLUTE
+    ../../angel/sysapp.c                     0x00000000   Number         0  sys_exit.o ABSOLUTE
     ../../armsys.c                           0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
     ../../armsys.c                           0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../../armsys.c                           0x00000000   Number         0  no_argv.o ABSOLUTE
     ../../cfplib/fpinit.c                    0x00000000   Number         0  fpinit.o ABSOLUTE
-    ../../division.s                         0x00000000   Number         0  aeabi_sdiv_div0.o ABSOLUTE
     ../../division.s                         0x00000000   Number         0  aeabi_sdiv.o ABSOLUTE
+    ../../division.s                         0x00000000   Number         0  aeabi_sdiv_div0.o ABSOLUTE
     ../../heapalloc.c                        0x00000000   Number         0  hrguard.o ABSOLUTE
     ../../heapaux.c                          0x00000000   Number         0  heapauxi.o ABSOLUTE
-    ../../libinit.s                          0x00000000   Number         0  libinit2.o ABSOLUTE
-    ../../libinit.s                          0x00000000   Number         0  libinit.o ABSOLUTE
-    ../../libinit.s                          0x00000000   Number         0  libshutdown2.o ABSOLUTE
     ../../libinit.s                          0x00000000   Number         0  libshutdown.o ABSOLUTE
+    ../../libinit.s                          0x00000000   Number         0  libshutdown2.o ABSOLUTE
+    ../../libinit.s                          0x00000000   Number         0  libinit.o ABSOLUTE
+    ../../libinit.s                          0x00000000   Number         0  libinit2.o ABSOLUTE
     ../../memcpset.c                         0x00000000   Number         0  rt_memclr.o ABSOLUTE
-    ../../signal.c                           0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
-    ../../signal.c                           0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_fpe_outer.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_fpe_formal.o ABSOLUTE
     ../../signal.c                           0x00000000   Number         0  defsig_exit.o ABSOLUTE
-    ../../signal.c                           0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
-    ../../signal.c                           0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
-    ../../signal.c                           0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
     ../../signal.c                           0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
     ../../signal.c                           0x00000000   Number         0  __raise.o ABSOLUTE
-    ../../signal.c                           0x00000000   Number         0  defsig_fpe_formal.o ABSOLUTE
-    ../../signal.c                           0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
-    ../../signal.c                           0x00000000   Number         0  defsig_fpe_outer.o ABSOLUTE
-    ../../signal.c                           0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
-    ../../signal.c                           0x00000000   Number         0  defsig_other.o ABSOLUTE
-    ../../signal.c                           0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
-    ../../signal.c                           0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
     ../../signal.c                           0x00000000   Number         0  defsig_general.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_other.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
     ../../signal.s                           0x00000000   Number         0  defsig.o ABSOLUTE
     ../../stdlib.c                           0x00000000   Number         0  exit.o ABSOLUTE
     dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
@@ -308,52 +306,50 @@ Image Symbol Table
     .text                                    0x000002f4   Section        8  libspace.o(.text)
     .ARM.__at_0x02FC                         0x000002fc   Section        4  startup_lpc11xx.o(.ARM.__at_0x02FC)
     .text                                    0x00000300   Section        0  arithmetic.o(.text)
-    .text                                    0x00000594   Section        0  motor_control.o(.text)
-    .text                                    0x000006a0   Section        0  servo_control.o(.text)
-    .text                                    0x0000076c   Section        0  common.o(.text)
-    .text                                    0x000008c0   Section        0  digital_sensor.o(.text)
-    .text                                    0x0000098c   Section        0  init_gpio.o(.text)
-    .text                                    0x00000b38   Section        0  init_motor.o(.text)
-    NVIC_EnableIRQ                           0x00000d7f   Thumb Code    14  init_motor.o(.text)
-    .text                                    0x00000dac   Section        0  init_servo.o(.text)
-    .text                                    0x00000e7c   Section        0  motor.o(.text)
-    .text                                    0x00000ff4   Section        0  servo.o(.text)
-    .text                                    0x0000102c   Section        0  systeminit.o(.text)
-    .text                                    0x00001180   Section        0  uart.o(.text)
-    .text                                    0x000013e8   Section        0  smartcar6th.o(.text)
-    SetSpeed                                 0x000013e9   Thumb Code   110  smartcar6th.o(.text)
-    .text                                    0x00001608   Section        0  rt_memclr.o(.text)
-    .text                                    0x00001648   Section      346  aeabi_sdiv.o(.text)
-    .text                                    0x000017a2   Section       62  sys_stackheap_outer.o(.text)
-    .text                                    0x000017e0   Section        0  sys_exit.o(.text)
-    .text                                    0x000017ec   Section        2  use_no_semi.o(.text)
-    .constdata                               0x000017ee   Section      180  motor_control.o(.constdata)
-    .data                                    0x10000000   Section        8  arithmetic.o(.data)
-    .data                                    0x10000008   Section        8  irqhandler.o(.data)
-    servo_counter                            0x10000008   Data           1  irqhandler.o(.data)
-    program_counter                          0x1000000c   Data           4  irqhandler.o(.data)
-    .data                                    0x10000010   Section        2  protect.o(.data)
-    teleControlCounter                       0x10000010   Data           1  protect.o(.data)
-    Counter                                  0x10000011   Data           1  protect.o(.data)
-    .data                                    0x10000014   Section        8  servo_control.o(.data)
-    s_iLastErr                               0x10000018   Data           4  servo_control.o(.data)
-    .data                                    0x1000001c   Section        4  init_motor.o(.data)
-    .data                                    0x10000020   Section        4  motor.o(.data)
-    gl_Motor_PWMBuff                         0x10000020   Data           4  motor.o(.data)
-    .data                                    0x10000024   Section        2  servo.o(.data)
-    gl_servoPWM                              0x10000024   Data           2  servo.o(.data)
-    .data                                    0x10000028   Section       12  systeminit.o(.data)
-    .data                                    0x10000034   Section       12  uart.o(.data)
-    .data                                    0x10000040   Section      100  smartcar6th.o(.data)
-    .bss                                     0x100000a4   Section       16  arithmetic.o(.bss)
-    angleRecord                              0x100000a4   Data          16  arithmetic.o(.bss)
-    .bss                                     0x100000b4   Section       64  uart.o(.bss)
-    .bss                                     0x100000f4   Section       96  libspace.o(.bss)
-    HEAP                                     0x10000158   Section        0  startup_lpc11xx.o(HEAP)
-    STACK                                    0x10000158   Section      512  startup_lpc11xx.o(STACK)
-    Heap_Mem                                 0x10000158   Data           0  startup_lpc11xx.o(HEAP)
-    Stack_Mem                                0x10000158   Data         512  startup_lpc11xx.o(STACK)
-    __initial_sp                             0x10000358   Data           0  startup_lpc11xx.o(STACK)
+    .text                                    0x00000530   Section        0  motor_control.o(.text)
+    .text                                    0x0000063c   Section        0  servo_control.o(.text)
+    .text                                    0x00000728   Section        0  common.o(.text)
+    .text                                    0x0000087c   Section        0  digital_sensor.o(.text)
+    .text                                    0x00000948   Section        0  init_gpio.o(.text)
+    .text                                    0x00000af4   Section        0  init_motor.o(.text)
+    NVIC_EnableIRQ                           0x00000d3b   Thumb Code    14  init_motor.o(.text)
+    .text                                    0x00000d68   Section        0  init_servo.o(.text)
+    .text                                    0x00000e38   Section        0  motor.o(.text)
+    .text                                    0x00000fb0   Section        0  servo.o(.text)
+    .text                                    0x00000fe8   Section        0  systeminit.o(.text)
+    .text                                    0x0000113c   Section        0  uart.o(.text)
+    .text                                    0x000013a4   Section        0  smartcar6th.o(.text)
+    SetSpeed                                 0x000013a5   Thumb Code   110  smartcar6th.o(.text)
+    .text                                    0x000015c4   Section        0  rt_memclr.o(.text)
+    .text                                    0x00001604   Section      346  aeabi_sdiv.o(.text)
+    .text                                    0x0000175e   Section       62  sys_stackheap_outer.o(.text)
+    .text                                    0x0000179c   Section        0  sys_exit.o(.text)
+    .text                                    0x000017a8   Section        2  use_no_semi.o(.text)
+    .constdata                               0x000017aa   Section      180  motor_control.o(.constdata)
+    .data                                    0x10000000   Section        8  irqhandler.o(.data)
+    servo_counter                            0x10000000   Data           1  irqhandler.o(.data)
+    program_counter                          0x10000004   Data           4  irqhandler.o(.data)
+    .data                                    0x10000008   Section        2  protect.o(.data)
+    teleControlCounter                       0x10000008   Data           1  protect.o(.data)
+    Counter                                  0x10000009   Data           1  protect.o(.data)
+    .data                                    0x1000000c   Section        8  servo_control.o(.data)
+    s_lastPositionErr                        0x1000000c   Data           4  servo_control.o(.data)
+    s_iLastErr                               0x10000010   Data           4  servo_control.o(.data)
+    .data                                    0x10000014   Section        4  init_motor.o(.data)
+    .data                                    0x10000018   Section        4  motor.o(.data)
+    gl_Motor_PWMBuff                         0x10000018   Data           4  motor.o(.data)
+    .data                                    0x1000001c   Section        2  servo.o(.data)
+    gl_servoPWM                              0x1000001c   Data           2  servo.o(.data)
+    .data                                    0x10000020   Section       12  systeminit.o(.data)
+    .data                                    0x1000002c   Section       12  uart.o(.data)
+    .data                                    0x10000038   Section       96  smartcar6th.o(.data)
+    .bss                                     0x10000098   Section       64  uart.o(.bss)
+    .bss                                     0x100000d8   Section       96  libspace.o(.bss)
+    HEAP                                     0x10000138   Section        0  startup_lpc11xx.o(HEAP)
+    STACK                                    0x10000138   Section      512  startup_lpc11xx.o(STACK)
+    Heap_Mem                                 0x10000138   Data           0  startup_lpc11xx.o(HEAP)
+    Stack_Mem                                0x10000138   Data         512  startup_lpc11xx.o(STACK)
+    __initial_sp                             0x10000338   Data           0  startup_lpc11xx.o(STACK)
 
     Global Symbols
 
@@ -469,102 +465,97 @@ Image Symbol Table
     __user_libspace                          0x000002f5   Thumb Code     8  libspace.o(.text)
     __user_perproc_libspace                  0x000002f5   Thumb Code     0  libspace.o(.text)
     __user_perthread_libspace                0x000002f5   Thumb Code     0  libspace.o(.text)
-    average                                  0x00000301   Thumb Code    34  arithmetic.o(.text)
-    Control                                  0x00000323   Thumb Code   218  arithmetic.o(.text)
-    RightTrace                               0x000003fd   Thumb Code   182  arithmetic.o(.text)
-    LeftTrace                                0x000004b3   Thumb Code   184  arithmetic.o(.text)
-    PWMOut                                   0x00000595   Thumb Code   202  motor_control.o(.text)
-    SpeedOut                                 0x0000065f   Thumb Code    52  motor_control.o(.text)
-    GetExpectedServoAngle                    0x000006a1   Thumb Code    58  servo_control.o(.text)
-    GetErr                                   0x000006db   Thumb Code   120  servo_control.o(.text)
-    ReadSwitch                               0x0000076d   Thumb Code   110  common.o(.text)
-    WriteLEDOnDrive                          0x000007db   Thumb Code   172  common.o(.text)
-    BUZZER_ON                                0x00000887   Thumb Code    14  common.o(.text)
-    BUZZER_OFF                               0x00000895   Thumb Code    14  common.o(.text)
-    Remote                                   0x000008a3   Thumb Code    18  common.o(.text)
-    GetDigitalSensorValue                    0x000008c1   Thumb Code   138  digital_sensor.o(.text)
-    GET_START_BAR                            0x0000094b   Thumb Code    14  digital_sensor.o(.text)
-    GetDigitalSensorNum                      0x00000959   Thumb Code    32  digital_sensor.o(.text)
-    set_GPIO_Dir                             0x0000098d   Thumb Code   346  init_gpio.o(.text)
-    reset_GPIO                               0x00000ae7   Thumb Code    24  init_gpio.o(.text)
-    Init_GPIO                                0x00000aff   Thumb Code    24  init_gpio.o(.text)
-    delayMs                                  0x00000b39   Thumb Code    92  init_motor.o(.text)
-    enable_timer16                           0x00000b95   Thumb Code    12  init_motor.o(.text)
-    disable_timer16                          0x00000ba1   Thumb Code    12  init_motor.o(.text)
-    reset_timer16                            0x00000bad   Thumb Code    34  init_motor.o(.text)
-    init_timer16                             0x00000bcf   Thumb Code   222  init_motor.o(.text)
-    Init_motor                               0x00000cad   Thumb Code   210  init_motor.o(.text)
-    enable_timer32                           0x00000dad   Thumb Code     8  init_servo.o(.text)
-    disable_timer32                          0x00000db5   Thumb Code     8  init_servo.o(.text)
-    init_timer32                             0x00000dbd   Thumb Code    56  init_servo.o(.text)
-    Init_servo                               0x00000df5   Thumb Code   112  init_servo.o(.text)
-    check_pwm_limit                          0x00000e7d   Thumb Code    28  motor.o(.text)
-    PWMout_LF                                0x00000e99   Thumb Code    58  motor.o(.text)
-    PWMout_RF                                0x00000ed3   Thumb Code    62  motor.o(.text)
-    PWMout_LR                                0x00000f11   Thumb Code    58  motor.o(.text)
-    PWMout_RR                                0x00000f4b   Thumb Code    62  motor.o(.text)
-    PWMOut4                                  0x00000f89   Thumb Code    36  motor.o(.text)
-    IRQ_motor_PWMOut                         0x00000fad   Thumb Code    50  motor.o(.text)
-    SetServoAngle                            0x00000ff5   Thumb Code    32  servo.o(.text)
-    servo_PWMOut                             0x00001015   Thumb Code    10  servo.o(.text)
-    Main_PLL_Setup                           0x0000102d   Thumb Code   140  systeminit.o(.text)
-    SystemInit                               0x000010b9   Thumb Code    56  systeminit.o(.text)
-    clk_out                                  0x000010f1   Thumb Code    82  systeminit.o(.text)
-    Init_ALL                                 0x00001143   Thumb Code    32  systeminit.o(.text)
-    UART_IRQHandler                          0x00001181   Thumb Code   180  uart.o(.text)
-    Init_UART                                0x00001235   Thumb Code   172  uart.o(.text)
-    UARTSend                                 0x000012e1   Thumb Code    54  uart.o(.text)
-    UART_recive                              0x00001317   Thumb Code    20  uart.o(.text)
-    myitoa                                   0x0000132b   Thumb Code   156  uart.o(.text)
-    main                                     0x00001457   Thumb Code   394  smartcar6th.o(.text)
-    _memset_w                                0x00001609   Thumb Code    26  rt_memclr.o(.text)
-    _memset                                  0x00001623   Thumb Code    30  rt_memclr.o(.text)
-    __aeabi_memclr                           0x00001641   Thumb Code     4  rt_memclr.o(.text)
-    __rt_memclr                              0x00001641   Thumb Code     0  rt_memclr.o(.text)
-    __aeabi_memclr4                          0x00001645   Thumb Code     0  rt_memclr.o(.text)
-    __aeabi_memclr8                          0x00001645   Thumb Code     0  rt_memclr.o(.text)
-    __rt_memclr_w                            0x00001645   Thumb Code     4  rt_memclr.o(.text)
-    __aeabi_uidiv                            0x00001649   Thumb Code     0  aeabi_sdiv.o(.text)
-    __aeabi_uidivmod                         0x00001649   Thumb Code    20  aeabi_sdiv.o(.text)
-    __aeabi_idiv                             0x0000165d   Thumb Code     0  aeabi_sdiv.o(.text)
-    __aeabi_idivmod                          0x0000165d   Thumb Code   326  aeabi_sdiv.o(.text)
-    __user_setup_stackheap                   0x000017a3   Thumb Code    62  sys_stackheap_outer.o(.text)
-    _sys_exit                                0x000017e1   Thumb Code     8  sys_exit.o(.text)
-    __I$use$semihosting                      0x000017ed   Thumb Code     0  use_no_semi.o(.text)
-    __use_no_semihosting_swi                 0x000017ed   Thumb Code     2  use_no_semi.o(.text)
-    gl_speedDifference                       0x000017ee   Data         180  motor_control.o(.constdata)
-    Region$$Table$$Base                      0x000018a4   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x000018c4   Number         0  anon$$obj.o(Region$$Table)
-    lastAngle                                0x10000000   Data           4  arithmetic.o(.data)
-    counter                                  0x10000004   Data           4  arithmetic.o(.data)
-    s_lastPositionErr                        0x10000014   Data           4  servo_control.o(.data)
-    TimerInterval                            0x1000001c   Data           4  init_motor.o(.data)
-    ClockSource                              0x10000028   Data           4  systeminit.o(.data)
-    SystemFrequency                          0x1000002c   Data           4  systeminit.o(.data)
-    SystemAHBFrequency                       0x10000030   Data           4  systeminit.o(.data)
-    UARTTxEmpty                              0x10000034   Data           1  uart.o(.data)
-    UARTCount                                0x10000038   Data           4  uart.o(.data)
-    UARTStatus                               0x1000003c   Data           4  uart.o(.data)
-    gl_cServoAngle                           0x10000040   Data           1  smartcar6th.o(.data)
-    gl_cMotorPWM                             0x10000041   Data           1  smartcar6th.o(.data)
-    gl_ucSensorNumber                        0x10000042   Data           1  smartcar6th.o(.data)
-    gl_uiDigitalSensor                       0x10000044   Data           4  smartcar6th.o(.data)
-    gl_ucSwitchValue                         0x10000048   Data           1  smartcar6th.o(.data)
-    gl_iPattern                              0x1000004c   Data           4  smartcar6th.o(.data)
-    gl_ulTimerCnt                            0x10000050   Data           4  smartcar6th.o(.data)
-    gl_iProgramPeriod                        0x10000054   Data           4  smartcar6th.o(.data)
-    gl_iCurSpeed                             0x10000058   Data           4  smartcar6th.o(.data)
-    gl_ulTotalDistance                       0x1000005c   Data           4  smartcar6th.o(.data)
-    gl_iStraightSpeed                        0x10000060   Data           4  smartcar6th.o(.data)
-    gl_iR600Speed                            0x10000064   Data           4  smartcar6th.o(.data)
-    gl_iR450Speed                            0x10000068   Data           4  smartcar6th.o(.data)
-    gl_iNowErr                               0x1000006c   Data           4  smartcar6th.o(.data)
-    gl_uiLastDigitalSensor                   0x10000070   Data           4  smartcar6th.o(.data)
-    gl_iSensorDistance                       0x10000074   Data          44  smartcar6th.o(.data)
-    gl_maxServoAngle                         0x100000a0   Data           4  smartcar6th.o(.data)
-    UARTBuffer                               0x100000b4   Data          64  uart.o(.bss)
-    __libspace_start                         0x100000f4   Data          96  libspace.o(.bss)
-    __temporary_stack_top$libspace           0x10000154   Data           0  libspace.o(.bss)
+    Control                                  0x00000301   Thumb Code   162  arithmetic.o(.text)
+    RightTrace                               0x000003a3   Thumb Code   182  arithmetic.o(.text)
+    LeftTrace                                0x00000459   Thumb Code   184  arithmetic.o(.text)
+    PWMOut                                   0x00000531   Thumb Code   202  motor_control.o(.text)
+    SpeedOut                                 0x000005fb   Thumb Code    52  motor_control.o(.text)
+    GetExpectedServoAngle                    0x0000063d   Thumb Code   138  servo_control.o(.text)
+    GetErr                                   0x000006c7   Thumb Code    82  servo_control.o(.text)
+    ReadSwitch                               0x00000729   Thumb Code   110  common.o(.text)
+    WriteLEDOnDrive                          0x00000797   Thumb Code   172  common.o(.text)
+    BUZZER_ON                                0x00000843   Thumb Code    14  common.o(.text)
+    BUZZER_OFF                               0x00000851   Thumb Code    14  common.o(.text)
+    Remote                                   0x0000085f   Thumb Code    18  common.o(.text)
+    GetDigitalSensorValue                    0x0000087d   Thumb Code   138  digital_sensor.o(.text)
+    GET_START_BAR                            0x00000907   Thumb Code    14  digital_sensor.o(.text)
+    GetDigitalSensorNum                      0x00000915   Thumb Code    32  digital_sensor.o(.text)
+    set_GPIO_Dir                             0x00000949   Thumb Code   346  init_gpio.o(.text)
+    reset_GPIO                               0x00000aa3   Thumb Code    24  init_gpio.o(.text)
+    Init_GPIO                                0x00000abb   Thumb Code    24  init_gpio.o(.text)
+    delayMs                                  0x00000af5   Thumb Code    92  init_motor.o(.text)
+    enable_timer16                           0x00000b51   Thumb Code    12  init_motor.o(.text)
+    disable_timer16                          0x00000b5d   Thumb Code    12  init_motor.o(.text)
+    reset_timer16                            0x00000b69   Thumb Code    34  init_motor.o(.text)
+    init_timer16                             0x00000b8b   Thumb Code   222  init_motor.o(.text)
+    Init_motor                               0x00000c69   Thumb Code   210  init_motor.o(.text)
+    enable_timer32                           0x00000d69   Thumb Code     8  init_servo.o(.text)
+    disable_timer32                          0x00000d71   Thumb Code     8  init_servo.o(.text)
+    init_timer32                             0x00000d79   Thumb Code    56  init_servo.o(.text)
+    Init_servo                               0x00000db1   Thumb Code   112  init_servo.o(.text)
+    check_pwm_limit                          0x00000e39   Thumb Code    28  motor.o(.text)
+    PWMout_LF                                0x00000e55   Thumb Code    58  motor.o(.text)
+    PWMout_RF                                0x00000e8f   Thumb Code    62  motor.o(.text)
+    PWMout_LR                                0x00000ecd   Thumb Code    58  motor.o(.text)
+    PWMout_RR                                0x00000f07   Thumb Code    62  motor.o(.text)
+    PWMOut4                                  0x00000f45   Thumb Code    36  motor.o(.text)
+    IRQ_motor_PWMOut                         0x00000f69   Thumb Code    50  motor.o(.text)
+    SetServoAngle                            0x00000fb1   Thumb Code    32  servo.o(.text)
+    servo_PWMOut                             0x00000fd1   Thumb Code    10  servo.o(.text)
+    Main_PLL_Setup                           0x00000fe9   Thumb Code   140  systeminit.o(.text)
+    SystemInit                               0x00001075   Thumb Code    56  systeminit.o(.text)
+    clk_out                                  0x000010ad   Thumb Code    82  systeminit.o(.text)
+    Init_ALL                                 0x000010ff   Thumb Code    32  systeminit.o(.text)
+    UART_IRQHandler                          0x0000113d   Thumb Code   180  uart.o(.text)
+    Init_UART                                0x000011f1   Thumb Code   172  uart.o(.text)
+    UARTSend                                 0x0000129d   Thumb Code    54  uart.o(.text)
+    UART_recive                              0x000012d3   Thumb Code    20  uart.o(.text)
+    myitoa                                   0x000012e7   Thumb Code   156  uart.o(.text)
+    main                                     0x00001413   Thumb Code   394  smartcar6th.o(.text)
+    _memset_w                                0x000015c5   Thumb Code    26  rt_memclr.o(.text)
+    _memset                                  0x000015df   Thumb Code    30  rt_memclr.o(.text)
+    __aeabi_memclr                           0x000015fd   Thumb Code     4  rt_memclr.o(.text)
+    __rt_memclr                              0x000015fd   Thumb Code     0  rt_memclr.o(.text)
+    __aeabi_memclr4                          0x00001601   Thumb Code     0  rt_memclr.o(.text)
+    __aeabi_memclr8                          0x00001601   Thumb Code     0  rt_memclr.o(.text)
+    __rt_memclr_w                            0x00001601   Thumb Code     4  rt_memclr.o(.text)
+    __aeabi_uidiv                            0x00001605   Thumb Code     0  aeabi_sdiv.o(.text)
+    __aeabi_uidivmod                         0x00001605   Thumb Code    20  aeabi_sdiv.o(.text)
+    __aeabi_idiv                             0x00001619   Thumb Code     0  aeabi_sdiv.o(.text)
+    __aeabi_idivmod                          0x00001619   Thumb Code   326  aeabi_sdiv.o(.text)
+    __user_setup_stackheap                   0x0000175f   Thumb Code    62  sys_stackheap_outer.o(.text)
+    _sys_exit                                0x0000179d   Thumb Code     8  sys_exit.o(.text)
+    __I$use$semihosting                      0x000017a9   Thumb Code     0  use_no_semi.o(.text)
+    __use_no_semihosting_swi                 0x000017a9   Thumb Code     2  use_no_semi.o(.text)
+    gl_speedDifference                       0x000017aa   Data         180  motor_control.o(.constdata)
+    Region$$Table$$Base                      0x00001860   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00001880   Number         0  anon$$obj.o(Region$$Table)
+    TimerInterval                            0x10000014   Data           4  init_motor.o(.data)
+    ClockSource                              0x10000020   Data           4  systeminit.o(.data)
+    SystemFrequency                          0x10000024   Data           4  systeminit.o(.data)
+    SystemAHBFrequency                       0x10000028   Data           4  systeminit.o(.data)
+    UARTTxEmpty                              0x1000002c   Data           1  uart.o(.data)
+    UARTCount                                0x10000030   Data           4  uart.o(.data)
+    UARTStatus                               0x10000034   Data           4  uart.o(.data)
+    gl_cServoAngle                           0x10000038   Data           1  smartcar6th.o(.data)
+    gl_cMotorPWM                             0x10000039   Data           1  smartcar6th.o(.data)
+    gl_ucSensorNumber                        0x1000003a   Data           1  smartcar6th.o(.data)
+    gl_uiDigitalSensor                       0x1000003c   Data           4  smartcar6th.o(.data)
+    gl_ucSwitchValue                         0x10000040   Data           1  smartcar6th.o(.data)
+    gl_iPattern                              0x10000044   Data           4  smartcar6th.o(.data)
+    gl_ulTimerCnt                            0x10000048   Data           4  smartcar6th.o(.data)
+    gl_iProgramPeriod                        0x1000004c   Data           4  smartcar6th.o(.data)
+    gl_iCurSpeed                             0x10000050   Data           4  smartcar6th.o(.data)
+    gl_ulTotalDistance                       0x10000054   Data           4  smartcar6th.o(.data)
+    gl_iStraightSpeed                        0x10000058   Data           4  smartcar6th.o(.data)
+    gl_iR600Speed                            0x1000005c   Data           4  smartcar6th.o(.data)
+    gl_iR450Speed                            0x10000060   Data           4  smartcar6th.o(.data)
+    gl_iNowErr                               0x10000064   Data           4  smartcar6th.o(.data)
+    gl_uiLastDigitalSensor                   0x10000068   Data           4  smartcar6th.o(.data)
+    gl_iSensorDistance                       0x1000006c   Data          44  smartcar6th.o(.data)
+    UARTBuffer                               0x10000098   Data          64  uart.o(.bss)
+    __libspace_start                         0x100000d8   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x10000138   Data           0  libspace.o(.bss)
 
 
 
@@ -574,111 +565,108 @@ Memory Map of the image
 
   Image Entry point : 0x000000c1
 
-  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00001968, Max: 0x00008000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00001918, Max: 0x00008000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x000018c4, Max: 0x00008000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00001880, Max: 0x00008000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x00000000   0x000000c0   Data   RO            3    RESET               startup_lpc11xx.o
-    0x000000c0   0x00000008   Code   RO          335  * !!!main             c_p.l(__main.o)(c_p.l)
-    0x000000c8   0x0000003c   Code   RO          504    !!!scatter          c_p.l(__scatter.o)(c_p.l)
-    0x00000104   0x0000001a   Code   RO          506    !!handler_copy      c_p.l(__scatter_copy.o)(c_p.l)
+    0x000000c0   0x00000008   Code   RO          330  * !!!main             c_p.l(__main.o)(c_p.l)
+    0x000000c8   0x0000003c   Code   RO          499    !!!scatter          c_p.l(__scatter.o)(c_p.l)
+    0x00000104   0x0000001a   Code   RO          501    !!handler_copy      c_p.l(__scatter_copy.o)(c_p.l)
     0x0000011e   0x00000002   PAD
-    0x00000120   0x0000001c   Code   RO          508    !!handler_zi        c_p.l(__scatter_zi.o)(c_p.l)
-    0x0000013c   0x00000006   Code   RO          378    .ARM.Collect$$libinit$$00000000  c_p.l(libinit.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          393    .ARM.Collect$$libinit$$00000006  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          395    .ARM.Collect$$libinit$$00000008  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          397    .ARM.Collect$$libinit$$0000000A  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          400    .ARM.Collect$$libinit$$0000000D  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          402    .ARM.Collect$$libinit$$0000000F  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          404    .ARM.Collect$$libinit$$00000011  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          406    .ARM.Collect$$libinit$$00000013  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          408    .ARM.Collect$$libinit$$00000015  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          410    .ARM.Collect$$libinit$$00000017  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          412    .ARM.Collect$$libinit$$00000019  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          414    .ARM.Collect$$libinit$$0000001B  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          416    .ARM.Collect$$libinit$$0000001D  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          418    .ARM.Collect$$libinit$$0000001F  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          420    .ARM.Collect$$libinit$$00000021  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          424    .ARM.Collect$$libinit$$00000028  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          426    .ARM.Collect$$libinit$$0000002A  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          428    .ARM.Collect$$libinit$$0000002C  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000000   Code   RO          430    .ARM.Collect$$libinit$$0000002E  c_p.l(libinit2.o)(c_p.l)
-    0x00000142   0x00000002   Code   RO          431    .ARM.Collect$$libinit$$0000002F  c_p.l(libinit2.o)(c_p.l)
-    0x00000144   0x00000002   Code   RO          462    .ARM.Collect$$libshutdown$$00000000  c_p.l(libshutdown.o)(c_p.l)
-    0x00000146   0x00000000   Code   RO          489    .ARM.Collect$$libshutdown$$00000003  c_p.l(libshutdown2.o)(c_p.l)
-    0x00000146   0x00000000   Code   RO          492    .ARM.Collect$$libshutdown$$00000006  c_p.l(libshutdown2.o)(c_p.l)
-    0x00000146   0x00000000   Code   RO          495    .ARM.Collect$$libshutdown$$00000009  c_p.l(libshutdown2.o)(c_p.l)
-    0x00000146   0x00000000   Code   RO          497    .ARM.Collect$$libshutdown$$0000000B  c_p.l(libshutdown2.o)(c_p.l)
-    0x00000146   0x00000000   Code   RO          500    .ARM.Collect$$libshutdown$$0000000E  c_p.l(libshutdown2.o)(c_p.l)
-    0x00000146   0x00000002   Code   RO          501    .ARM.Collect$$libshutdown$$0000000F  c_p.l(libshutdown2.o)(c_p.l)
-    0x00000148   0x00000000   Code   RO          337    .ARM.Collect$$rtentry$$00000000  c_p.l(rtentry.o)(c_p.l)
-    0x00000148   0x00000000   Code   RO          344    .ARM.Collect$$rtentry$$00000002  c_p.l(rtentry2.o)(c_p.l)
-    0x00000148   0x00000006   Code   RO          359    .ARM.Collect$$rtentry$$00000004  c_p.l(rtentry4.o)(c_p.l)
-    0x0000014e   0x00000000   Code   RO          346    .ARM.Collect$$rtentry$$00000009  c_p.l(rtentry2.o)(c_p.l)
-    0x0000014e   0x00000004   Code   RO          347    .ARM.Collect$$rtentry$$0000000A  c_p.l(rtentry2.o)(c_p.l)
-    0x00000152   0x00000000   Code   RO          349    .ARM.Collect$$rtentry$$0000000C  c_p.l(rtentry2.o)(c_p.l)
-    0x00000152   0x00000008   Code   RO          350    .ARM.Collect$$rtentry$$0000000D  c_p.l(rtentry2.o)(c_p.l)
-    0x0000015a   0x00000002   Code   RO          383    .ARM.Collect$$rtexit$$00000000  c_p.l(rtexit.o)(c_p.l)
-    0x0000015c   0x00000000   Code   RO          437    .ARM.Collect$$rtexit$$00000002  c_p.l(rtexit2.o)(c_p.l)
-    0x0000015c   0x00000004   Code   RO          438    .ARM.Collect$$rtexit$$00000003  c_p.l(rtexit2.o)(c_p.l)
-    0x00000160   0x00000006   Code   RO          439    .ARM.Collect$$rtexit$$00000004  c_p.l(rtexit2.o)(c_p.l)
+    0x00000120   0x0000001c   Code   RO          503    !!handler_zi        c_p.l(__scatter_zi.o)(c_p.l)
+    0x0000013c   0x00000006   Code   RO          373    .ARM.Collect$$libinit$$00000000  c_p.l(libinit.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          388    .ARM.Collect$$libinit$$00000006  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          390    .ARM.Collect$$libinit$$00000008  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          392    .ARM.Collect$$libinit$$0000000A  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          395    .ARM.Collect$$libinit$$0000000D  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          397    .ARM.Collect$$libinit$$0000000F  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          399    .ARM.Collect$$libinit$$00000011  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          401    .ARM.Collect$$libinit$$00000013  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          403    .ARM.Collect$$libinit$$00000015  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          405    .ARM.Collect$$libinit$$00000017  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          407    .ARM.Collect$$libinit$$00000019  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          409    .ARM.Collect$$libinit$$0000001B  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          411    .ARM.Collect$$libinit$$0000001D  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          413    .ARM.Collect$$libinit$$0000001F  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          415    .ARM.Collect$$libinit$$00000021  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          419    .ARM.Collect$$libinit$$00000028  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          421    .ARM.Collect$$libinit$$0000002A  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          423    .ARM.Collect$$libinit$$0000002C  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000000   Code   RO          425    .ARM.Collect$$libinit$$0000002E  c_p.l(libinit2.o)(c_p.l)
+    0x00000142   0x00000002   Code   RO          426    .ARM.Collect$$libinit$$0000002F  c_p.l(libinit2.o)(c_p.l)
+    0x00000144   0x00000002   Code   RO          457    .ARM.Collect$$libshutdown$$00000000  c_p.l(libshutdown.o)(c_p.l)
+    0x00000146   0x00000000   Code   RO          484    .ARM.Collect$$libshutdown$$00000003  c_p.l(libshutdown2.o)(c_p.l)
+    0x00000146   0x00000000   Code   RO          487    .ARM.Collect$$libshutdown$$00000006  c_p.l(libshutdown2.o)(c_p.l)
+    0x00000146   0x00000000   Code   RO          490    .ARM.Collect$$libshutdown$$00000009  c_p.l(libshutdown2.o)(c_p.l)
+    0x00000146   0x00000000   Code   RO          492    .ARM.Collect$$libshutdown$$0000000B  c_p.l(libshutdown2.o)(c_p.l)
+    0x00000146   0x00000000   Code   RO          495    .ARM.Collect$$libshutdown$$0000000E  c_p.l(libshutdown2.o)(c_p.l)
+    0x00000146   0x00000002   Code   RO          496    .ARM.Collect$$libshutdown$$0000000F  c_p.l(libshutdown2.o)(c_p.l)
+    0x00000148   0x00000000   Code   RO          332    .ARM.Collect$$rtentry$$00000000  c_p.l(rtentry.o)(c_p.l)
+    0x00000148   0x00000000   Code   RO          339    .ARM.Collect$$rtentry$$00000002  c_p.l(rtentry2.o)(c_p.l)
+    0x00000148   0x00000006   Code   RO          354    .ARM.Collect$$rtentry$$00000004  c_p.l(rtentry4.o)(c_p.l)
+    0x0000014e   0x00000000   Code   RO          341    .ARM.Collect$$rtentry$$00000009  c_p.l(rtentry2.o)(c_p.l)
+    0x0000014e   0x00000004   Code   RO          342    .ARM.Collect$$rtentry$$0000000A  c_p.l(rtentry2.o)(c_p.l)
+    0x00000152   0x00000000   Code   RO          344    .ARM.Collect$$rtentry$$0000000C  c_p.l(rtentry2.o)(c_p.l)
+    0x00000152   0x00000008   Code   RO          345    .ARM.Collect$$rtentry$$0000000D  c_p.l(rtentry2.o)(c_p.l)
+    0x0000015a   0x00000002   Code   RO          378    .ARM.Collect$$rtexit$$00000000  c_p.l(rtexit.o)(c_p.l)
+    0x0000015c   0x00000000   Code   RO          432    .ARM.Collect$$rtexit$$00000002  c_p.l(rtexit2.o)(c_p.l)
+    0x0000015c   0x00000004   Code   RO          433    .ARM.Collect$$rtexit$$00000003  c_p.l(rtexit2.o)(c_p.l)
+    0x00000160   0x00000006   Code   RO          434    .ARM.Collect$$rtexit$$00000004  c_p.l(rtexit2.o)(c_p.l)
     0x00000166   0x00000002   PAD
     0x00000168   0x00000034   Code   RO            5    .text               startup_lpc11xx.o
-    0x0000019c   0x00000078   Code   RO           99    .text               irqhandler.o
-    0x00000214   0x00000068   Code   RO          128    .text               protect.o
-    0x0000027c   0x00000064   Code   RO          180    .text               init_encoder.o
-    0x000002e0   0x00000006   Code   RO          333    .text               c_p.l(heapauxi.o)(c_p.l)
-    0x000002e6   0x0000000c   Code   RO          366    .text               c_p.l(exit.o)(c_p.l)
+    0x0000019c   0x00000078   Code   RO           95    .text               irqhandler.o
+    0x00000214   0x00000068   Code   RO          124    .text               protect.o
+    0x0000027c   0x00000064   Code   RO          175    .text               init_encoder.o
+    0x000002e0   0x00000006   Code   RO          328    .text               c_p.l(heapauxi.o)(c_p.l)
+    0x000002e6   0x0000000c   Code   RO          361    .text               c_p.l(exit.o)(c_p.l)
     0x000002f2   0x00000002   PAD
-    0x000002f4   0x00000008   Code   RO          379    .text               c_p.l(libspace.o)(c_p.l)
+    0x000002f4   0x00000008   Code   RO          374    .text               c_p.l(libspace.o)(c_p.l)
     0x000002fc   0x00000004   Code   RO            4    .ARM.__at_0x02FC    startup_lpc11xx.o
-    0x00000300   0x00000294   Code   RO           13    .text               arithmetic.o
-    0x00000594   0x0000010c   Code   RO          113    .text               motor_control.o
-    0x000006a0   0x000000cc   Code   RO          141    .text               servo_control.o
-    0x0000076c   0x00000154   Code   RO          156    .text               common.o
-    0x000008c0   0x000000cc   Code   RO          168    .text               digital_sensor.o
-    0x0000098c   0x000001ac   Code   RO          192    .text               init_gpio.o
-    0x00000b38   0x00000274   Code   RO          204    .text               init_motor.o
-    0x00000dac   0x000000d0   Code   RO          222    .text               init_servo.o
-    0x00000e7c   0x00000178   Code   RO          234    .text               motor.o
-    0x00000ff4   0x00000038   Code   RO          248    .text               servo.o
-    0x0000102c   0x00000154   Code   RO          262    .text               systeminit.o
-    0x00001180   0x00000268   Code   RO          290    .text               uart.o
-    0x000013e8   0x00000220   Code   RO          306    .text               smartcar6th.o
-    0x00001608   0x00000040   Code   RO          327    .text               c_p.l(rt_memclr.o)(c_p.l)
-    0x00001648   0x0000015a   Code   RO          329    .text               c_p.l(aeabi_sdiv.o)(c_p.l)
-    0x000017a2   0x0000003e   Code   RO          363    .text               c_p.l(sys_stackheap_outer.o)(c_p.l)
-    0x000017e0   0x0000000c   Code   RO          434    .text               c_p.l(sys_exit.o)(c_p.l)
-    0x000017ec   0x00000002   Code   RO          452    .text               c_p.l(use_no_semi.o)(c_p.l)
-    0x000017ee   0x000000b4   Data   RO          114    .constdata          motor_control.o
-    0x000018a2   0x00000002   PAD
-    0x000018a4   0x00000020   Data   RO          502    Region$$Table       anon$$obj.o
+    0x00000300   0x00000230   Code   RO           13    .text               arithmetic.o
+    0x00000530   0x0000010c   Code   RO          109    .text               motor_control.o
+    0x0000063c   0x000000ec   Code   RO          137    .text               servo_control.o
+    0x00000728   0x00000154   Code   RO          151    .text               common.o
+    0x0000087c   0x000000cc   Code   RO          163    .text               digital_sensor.o
+    0x00000948   0x000001ac   Code   RO          187    .text               init_gpio.o
+    0x00000af4   0x00000274   Code   RO          199    .text               init_motor.o
+    0x00000d68   0x000000d0   Code   RO          217    .text               init_servo.o
+    0x00000e38   0x00000178   Code   RO          229    .text               motor.o
+    0x00000fb0   0x00000038   Code   RO          243    .text               servo.o
+    0x00000fe8   0x00000154   Code   RO          257    .text               systeminit.o
+    0x0000113c   0x00000268   Code   RO          285    .text               uart.o
+    0x000013a4   0x00000220   Code   RO          301    .text               smartcar6th.o
+    0x000015c4   0x00000040   Code   RO          322    .text               c_p.l(rt_memclr.o)(c_p.l)
+    0x00001604   0x0000015a   Code   RO          324    .text               c_p.l(aeabi_sdiv.o)(c_p.l)
+    0x0000175e   0x0000003e   Code   RO          358    .text               c_p.l(sys_stackheap_outer.o)(c_p.l)
+    0x0000179c   0x0000000c   Code   RO          429    .text               c_p.l(sys_exit.o)(c_p.l)
+    0x000017a8   0x00000002   Code   RO          447    .text               c_p.l(use_no_semi.o)(c_p.l)
+    0x000017aa   0x000000b4   Data   RO          110    .constdata          motor_control.o
+    0x0000185e   0x00000002   PAD
+    0x00001860   0x00000020   Data   RO          497    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Base: 0x10000000, Size: 0x00000358, Max: 0x00002000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Base: 0x10000000, Size: 0x00000338, Max: 0x00002000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x10000000   0x00000008   Data   RW           15    .data               arithmetic.o
-    0x10000008   0x00000008   Data   RW          100    .data               irqhandler.o
-    0x10000010   0x00000002   Data   RW          129    .data               protect.o
-    0x10000012   0x00000002   PAD
-    0x10000014   0x00000008   Data   RW          142    .data               servo_control.o
-    0x1000001c   0x00000004   Data   RW          205    .data               init_motor.o
-    0x10000020   0x00000004   Data   RW          235    .data               motor.o
-    0x10000024   0x00000002   Data   RW          249    .data               servo.o
-    0x10000026   0x00000002   PAD
-    0x10000028   0x0000000c   Data   RW          263    .data               systeminit.o
-    0x10000034   0x0000000c   Data   RW          292    .data               uart.o
-    0x10000040   0x00000064   Data   RW          307    .data               smartcar6th.o
-    0x100000a4   0x00000010   Zero   RW           14    .bss                arithmetic.o
-    0x100000b4   0x00000040   Zero   RW          291    .bss                uart.o
-    0x100000f4   0x00000060   Zero   RW          380    .bss                c_p.l(libspace.o)(c_p.l)
-    0x10000154   0x00000004   PAD
-    0x10000158   0x00000000   Zero   RW            2    HEAP                startup_lpc11xx.o
-    0x10000158   0x00000200   Zero   RW            1    STACK               startup_lpc11xx.o
+    0x10000000   0x00000008   Data   RW           96    .data               irqhandler.o
+    0x10000008   0x00000002   Data   RW          125    .data               protect.o
+    0x1000000a   0x00000002   PAD
+    0x1000000c   0x00000008   Data   RW          138    .data               servo_control.o
+    0x10000014   0x00000004   Data   RW          200    .data               init_motor.o
+    0x10000018   0x00000004   Data   RW          230    .data               motor.o
+    0x1000001c   0x00000002   Data   RW          244    .data               servo.o
+    0x1000001e   0x00000002   PAD
+    0x10000020   0x0000000c   Data   RW          258    .data               systeminit.o
+    0x1000002c   0x0000000c   Data   RW          287    .data               uart.o
+    0x10000038   0x00000060   Data   RW          302    .data               smartcar6th.o
+    0x10000098   0x00000040   Zero   RW          286    .bss                uart.o
+    0x100000d8   0x00000060   Zero   RW          375    .bss                c_p.l(libspace.o)(c_p.l)
+    0x10000138   0x00000000   Zero   RW            2    HEAP                startup_lpc11xx.o
+    0x10000138   0x00000200   Zero   RW            1    STACK               startup_lpc11xx.o
 
 
 ==============================================================================
@@ -688,7 +676,7 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       660         42          0          8         16          0   arithmetic.o
+       560         32          0          0          0          0   arithmetic.o
        340         12          0          0          0          0   common.o
        204         20          0          0          0          0   digital_sensor.o
        100         12          0          0          0          0   init_encoder.o
@@ -700,16 +688,16 @@ Image component sizes
        268         14        180          0          0          0   motor_control.o
        104         18          0          2          0          0   protect.o
         56         14          0          2          0          0   servo.o
-       204         26          0          8          0          0   servo_control.o
-       544         40          0        100          0          0   smartcar6th.o
+       236         16          0          8          0          0   servo_control.o
+       544         40          0         96          0          0   smartcar6th.o
         56         26        192          0        512          0   startup_lpc11xx.o
        340         30          0         12          0          0   systeminit.o
        616         34          0         12         64          0   uart.o
 
     ----------------------------------------------------------------------
-      5252        422        406        164        592          0   Object Totals
+      5184        402        406        152        576          0   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-         0          0          2          4          0          1   (incl. Padding)
+         0          0          2          4          0          2   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -738,8 +726,8 @@ Image component sizes
          2          0          0          0          0          0   use_no_semi.o
 
     ----------------------------------------------------------------------
-       682         16          0          0        100          0   Library Totals
-         6          0          0          0          4          0   (incl. Padding)
+       682         16          0          0         96          0   Library Totals
+         6          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -748,7 +736,7 @@ Image component sizes
        676         16          0          0         96        740   c_p.l
 
     ----------------------------------------------------------------------
-       682         16          0          0        100          0   Library Totals
+       682         16          0          0         96          0   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -757,15 +745,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      5934        438        406        164        692      40016   Grand Totals
-      5934        438        406        164        692      40016   ELF Image Totals
-      5934        438        406        164          0          0   ROM Totals
+      5866        418        406        152        672      39140   Grand Totals
+      5866        418        406        152        672      39140   ELF Image Totals
+      5866        418        406        152          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 6340 (   6.19kB)
-    Total RW  Size (RW Data + ZI Data)               856 (   0.84kB)
-    Total ROM Size (Code + RO Data + RW Data)       6504 (   6.35kB)
+    Total RO  Size (Code + RO Data)                 6272 (   6.13kB)
+    Total RW  Size (RW Data + ZI Data)               824 (   0.80kB)
+    Total ROM Size (Code + RO Data + RW Data)       6424 (   6.27kB)
 
 ==============================================================================
 
