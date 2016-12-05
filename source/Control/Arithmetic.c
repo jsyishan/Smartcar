@@ -80,25 +80,31 @@ void Control(void)
     if(servoAngleTemp<0){
         servoAngleTemp = 0 - servoAngleTemp;
     }
-    if(servoAngleTemp>0&&servoAngleTemp < 6){
+    if(servoAngleTemp > 0 && servoAngleTemp < 6){
         SpeedOut(gl_iStraightSpeed,0);
+        SetServoAngle(0);
     }
-    else if(servoAngleTemp < 15){
-        SpeedOut(gl_iR600Speed + 12,gl_cServoAngle);
+    else if(servoAngleTemp < 14){
+        SpeedOut(gl_iR600Speed + 12, gl_cServoAngle);
+        SetServoAngle(gl_cServoAngle);
     }
-    else if(servoAngleTemp < 24) {
-        SpeedOut(gl_iR600Speed + 7,gl_cServoAngle);
+    else if(servoAngleTemp < 35) {
+        SpeedOut(gl_iR600Speed + 7, gl_cServoAngle);
+        SetServoAngle(gl_cServoAngle);
     }
     else if(servoAngleTemp < 37) {
-        SpeedOut(gl_iR600Speed + 3,gl_cServoAngle);
+        SpeedOut(gl_iR600Speed + 3, gl_cServoAngle);
+        SetServoAngle(gl_cServoAngle);
     }
-    else if(servoAngleTemp < 50){
-        SpeedOut(gl_iR600Speed - 2,gl_cServoAngle);
+    else if(servoAngleTemp < 55){
+        SpeedOut(gl_iR600Speed - 2, gl_cServoAngle);
+        SetServoAngle(gl_cServoAngle);
     }
     else{
         SpeedOut(gl_iR450Speed,gl_cServoAngle);
+        SetServoAngle(gl_cServoAngle);
     }
-    SetServoAngle(gl_cServoAngle);
+    
 
 }
 
